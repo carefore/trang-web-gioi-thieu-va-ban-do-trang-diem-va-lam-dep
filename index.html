@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang web đồ trang điểm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Trang web đồ trang điểm</h1>
+    </header>
+
+    <section id="productForm">
+        <h2>Thêm sản phẩm mới</h2>
+        <form id="addProductForm" action="process.php" method="post">
+            <label for="productName">Tên sản phẩm:</label>
+            <input type="text" id="productName" name="productName" required>
+
+            <label for="productPrice">Giá:</label>
+            <input type="text" id="productPrice" name="productPrice" required>
+
+            <button type="submit">Thêm sản phẩm</button>
+        </form>
+    </section>
+
+    <section id="productList">
+        <h2>Danh sách sản phẩm</h2>
+        <ul id="products"></ul>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
